@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="header_inner">
+			<div class="header_left">
+				<div class="header_left_item">
+					<a href="#" class="header_menu">
+						<div class="header_left_menu">
+							<div class="header_left_menu_line"></div>
+							<div class="header_left_menu_line"></div>
+							<div class="header_left_menu_line"></div>
+						</div>
+					</a>
+				</div>
+				<div class="header_left_item">
+					<a href="#" class="header_logo">
+						<img src="img/logo.png" alt="Logo">
+					</a>	
+				</div>	
+			</div>
+			
+			<div class="header_center">
+				<nav class="header_nav">
+					<a href="#" class="header_nav_link">Home</a>
+					<a href="#" class="header_nav_link">Devices</a>
+					<a href="#" class="header_nav_link">Delivery & Payment</a>
+					<a href="#" class="header_nav_link">Guarantee</a>
+					<a href="#" class="header_nav_link">About Us</a>
+				</nav>
+			</div>
+			
+			<div class="header_right">
+				<div class="header_right_item cart">
+					<div class="header_image">
+						<img src="img/cart.png" alt="cart">
+					</div>
+					<span>cart</span>
+					<div>
+						<div class="item_counter">0</div>
+					</div>
+				</div>
+				<div class="header_right_item sign">
+					<div class="pre_sing">
+						<a href="#">Sign in</a>
+					</div>
+				</div>
+			</div>	
+		
+		</div>
+	</div>
+	<div class="sub_header_line">
+		<div class="sub_header_line_line"></div>
+	</div>
+</header>
+
+<div class="sub_header">
+	<div class="container">
+		<div class="sub_header_inner">
+			<div class="sub_header_item">
+				<a href="#" class="sub_header_menu">top sales</a>
+				<a href="#" class="sub_header_menu">brand focus</a>
+				<a href="#" class="sub_header_menu">hi-tech</a>
+				<a href="#" class="sub_header_menu">best sellers</a>
+				<a href="#" class="sub_header_menu">projects</a>
+			</div>
+			<div class="sub_header_item">
+				<a href="#" class="sub_header_menu">Support</a>
+				<a href="#" class="sub_header_menu sub_menu_search">
+					<img src="img/search.png" alt="Search"><span>I'm looking for ... </span>
+				</a>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="standboard">
+	<div class="standboard_content">	
+		<div class="staboard_image  first_image">
+			<div class="staboard_image_cont">
+				<img src="img/placeholder.png" alt="Ad 1" />
+			</div>
+			<div class="standboard_article">
+				<h2>New iPhone</h2>
+				<p>
+					At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast 	by him, or I should have fallen to the ground.
+				</p>				
+				<a href="#">Buy now</a>
+			</div>
+		</div>
+		
+		<div class="staboard_image second_image">
+			<div class="staboard_image_cont">
+				<img src="img/placeholder.png" alt="Ad 2" />
+			</div>
+			<div class="standboard_article">
+				<h2>New iPhone</h2>
+				<p>
+					second page
+				</p>				
+				<a href="#">Buy now</a>
+			</div>
+		</div>
+
+		<div class="staboard_image third_image">
+			<div class="staboard_image_cont">
+				<img src="img/placeholder.png" alt="Ad 3" />
+			</div>
+			<div class="standboard_article">
+				<h2>New iPhone</h2>
+				<p>
+					third page
+				</p>				
+				<a href="#">Buy now</a>
+			</div>
+		</div>
+
+		<div class="staboard_image fourth_image">
+			<div class="staboard_image_cont">
+				<img src="img/placeholder.png" alt="Ad 4" />
+			</div>
+			<div class="standboard_article">
+				<h2>New iPhone</h2>
+				<p>
+					fourth page
+				</p>				
+				<a href="#">Buy now</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="standboard_prev">
+		<div onclick="switch_to_prev()" class="switch_button" id="standboard_prev">
+			<img src="img/button_next.png"  alt="prev">
+		</div>
+	</div>
+	
+	<div class="standboard_next">
+		<div onclick="switch_to_next()" class="switch_button" id="standboard_next">
+			<img src="img/button_next.png"  alt="next">
+		</div>	
+	</div>
+
+	<div class="standboard_dots">
+		<div class="dot active_dot" id="dot_0" onclick="switch_to(0)"></div>
+		<div class="dot" id="dot_1" onclick="switch_to(1)"></div>
+		<div class="dot" id="dot_2" onclick="switch_to(2)"></div>
+		<div class="dot" id="dot_3" onclick="switch_to(3)"></div>
+	</div>
+</div>
+
+<div class="buymenu">
+	<div class="container">
+		<div class="buymenu_inner">
+			
+			<div class="buymenu_item side">
+				<p>sort by: </p>
+				<div class="buymenu_item_select">Best watch <div class="poiner"></div></div>
+			</div>
+			<div class="buymenu_item center">
+				<p>keywords</p>
+				<input id="search" type="text" placeholder="Tablet">
+				<p>Price</p>
+				<input id="price_1" type="number" value="10"> <div class="tere">-</div>
+				<input id="price_2" type="number" value="1000">
+				<div class="free_ship">
+					<img src="img/ch_button.png" alt="ch">
+					<h2>Free shiping</h2>
+				</div>
+			</div>
+			<div class="buymenu_item side">
+				<p>ship to: </p>
+				<div class="buymenu_item_select">USA <div class="poiner"></div></div>
+			</div>
+
+		</div>
+	</div>	
+</div>
+
+<div class="content">
+	<div class="container">
+		<div class="content_inner">
+			<div class="content_item">
+				<div class="categories">
+					<div class="cat_sel">
+						<div class="cat_title round_tit">
+							<h2 onclick="open_sel_cat('sel_cat_1')">Title</h2>
+							<div></div>
+						</div>
+						<div id="sel_cat_1">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+							<a href="#">product 4</a>	
+						</div>
+					</div>
+
+					<div class="cat_sel">
+						<div class="cat_title">
+							<h2 onclick="open_sel_cat('sel_cat_2')">Title</h2>
+							<div></div>
+						</div>
+						<div id="sel_cat_2">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+							<a href="#">product 4</a>	
+						</div>
+					</div>
+
+					<div class="cat_sel">
+						<div class="cat_title">
+							<h2 onclick="open_sel_cat('sel_cat_3')">Title</h2>
+							<div></div>
+						</div>
+						<div id="sel_cat_3">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+							<a href="#">product 4</a>	
+						</div>
+					</div>
+
+					<div class="cat_sel">
+						<div class="cat_title">
+							<h2 onclick="open_sel_cat('sel_cat_4')">Title</h2>
+							<div></div>
+						</div>
+						<div id="sel_cat_4">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+							<a href="#">product 4</a>	
+						</div>
+					</div>
+
+					<div class="cat_sel round_tib">
+						<div class="cat_title">
+							<h2 onclick="open_sel_cat('sel_cat_5')">Title</h2>
+							<div></div>
+						</div>
+						<div id="sel_cat_5">
+							<a href="#">product 1</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
+							<a href="#">product 4</a>	
+						</div>
+					</div>
+				</div> <!-- categories -->	
+
+				<div class="products_available .def_cursor">
+					<h3 class="prod_menu_title">Available</h3>
+					<label onchange="select_place()" class="place_sel"><span><input type="radio" name="place" value="In" checked>  In storage</span><p>42</p></label>
+					<label class="place_sel"><span><input type="radio" name="place" value="On">In online-shop</span> <p>12</p></label>
+				</div>
+				<div class="brands">
+					<div class="brands_title"><span class="prod_menu_title">brands</span><div onclick="open_sel_cat('brands_sub')">all</div></div>
+					<form method="post">
+						
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Apple</span>
+									<span class="brand_count">32</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">JBL</span>
+									<span class="brand_count">14</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Bose</span>
+									<span class="brand_count">3</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Nest</span>
+									<span class="brand_count">5</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+
+						<div id="brands_sub">
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Nunus</span>
+										<span class="brand_count">2</span>
+									</div>
+									<input type="checkbox" checked="checked">	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Pinus</span>
+										<span class="brand_count">3</span>
+									</div>
+									<input type="checkbox" checked="checked">	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Crocodilus</span>
+										<span class="brand_count">50</span>
+									</div>
+									<input type="checkbox" checked="checked">	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div> <!-- content_item -->
+			
+			<div class="content_item">
+				<div class="items_row">	
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/AppleTV.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Pebble Time.png" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Zendure 4-Port USB.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>		
+				</div>
+
+				<div class="items_row">	
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/withings smart body analyzer ws-50.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item big_product">
+						<a href="#" class="product_name">
+							<img src="img/JBL Charge 2+.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>		
+				</div>
+
+				<div class="items_row">	
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Ollo Clip New.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Fitbit Charge HR Heart Rate and Activity Tracker.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Apple® Watch Sport 38mm Silver Aluminum Case.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>		
+				</div>
+
+				<div class="items_row">	
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/Bose SoundLink On-Ear Headphones.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name">
+							<img src="img/SONOS PLAY-1 Wireless HiFi System.jpg" alt="item">
+							<span>Name</span>
+						</a>
+						<h3>Color</h3>
+						<h4>Price</h4>
+					</div>
+					<div class="items_item">
+						<a href="#" class="product_name full frame">
+							<span>Name</span>
+							<h4>Price</h4>
+							<img src="img/Layer 1.png" alt="item">
+							
+						</a>
+					</div>		
+				</div>
+
+			</div> <!-- content -->
+		</div> <!-- content_inner -->
+	</div> <!-- container -->
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

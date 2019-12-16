@@ -38,7 +38,7 @@
 				</nav>
 			</div>
 			
-			<div class="header_right">
+			<div class="header_right def_cursor">
 				<div class="header_right_item cart">
 					<div class="header_image">
 						<img src="img/cart.png" alt="cart">
@@ -75,7 +75,8 @@
 			<div class="sub_header_item">
 				<a href="#" class="sub_header_menu">Support</a>
 				<a href="#" class="sub_header_menu sub_menu_search">
-					<img src="img/search.png" alt="Search"><span>I'm looking for ... </span>
+					<img src="img/search.png" alt="Search">
+					<input type="search" placeholder="I'm looking for ...">
 				</a>
 			</div>
 		</div>
@@ -86,14 +87,14 @@
 	<div class="standboard_content">	
 		<div class="staboard_image  first_image">
 			<div class="staboard_image_cont">
-				<img src="img/placeholder.png" alt="Ad 1" />
+				<img src="img/Placeholder1.jpg" alt="Ad 1" />
 			</div>
 			<div class="standboard_article">
-				<h2>New iPhone</h2>
+				<h2>New iPhone 11</h2>
 				<p>
 					At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast 	by him, or I should have fallen to the ground.
 				</p>				
-				<a href="#">Buy now</a>
+				<a href="#" class="def_cursor">Buy now</a>
 			</div>
 		</div>
 		
@@ -137,16 +138,15 @@
 		</div>
 	</div>
 
-	
 	<div class="standboard_prev">
-		<div onclick="switch_to_prev()" class="switch_button" id="standboard_prev">
-			<img src="img/button_next.png"  alt="prev">
+		<div onclick="switch_to_prev()" class="switch_button def_cursor" id="standboard_prev">
+			<div class="button_pointer_cir"><div class="button_pointer button_pointer_prev"></div></div>
 		</div>
 	</div>
 	
 	<div class="standboard_next">
-		<div onclick="switch_to_next()" class="switch_button" id="standboard_next">
-			<img src="img/button_next.png"  alt="next">
+		<div onclick="switch_to_next()" class="switch_button def_cursor" id="standboard_next">
+			<div class="button_pointer_cir"><div class="button_pointer button_pointer_next"></div></div>
 		</div>	
 	</div>
 
@@ -167,12 +167,25 @@
 				<div class="buymenu_item_select">Best watch <div class="poiner"></div></div>
 			</div>
 			<div class="buymenu_item center">
-				<p>keywords</p>
-				<input id="search" type="text" placeholder="Tablet">
-				<p>Price</p>
-				<input id="price_1" type="number" value="10"> <div class="tere">-</div>
-				<input id="price_2" type="number" value="1000">
-				<div class="free_ship">
+				<div class="buy_search">
+					<p>keywords</p>
+					<div>
+						<input id="search" type="text" placeholder="Tablet">
+					</div>
+				</div>
+				<div class="buymenu_price">
+					<p>Price</p>
+					<div>
+						<input id="price_1" type="number" value="10">
+					</div>
+					<div class="tere">
+					-
+					</div>
+					<div>
+						<input id="price_2" type="number" value="1000">
+					</div>
+				</div>
+				<div class="free_ship def_cursor">
 					<img src="img/ch_button.png" alt="ch">
 					<h2>Free shiping</h2>
 				</div>
@@ -192,9 +205,9 @@
 			<div class="content_item">
 				<div class="categories">
 					<div class="cat_sel">
-						<div class="cat_title round_tit">
-							<h2 onclick="open_sel_cat('sel_cat_1')">Title</h2>
-							<div></div>
+						<div onclick="open_sel_cat('sel_cat_1')" class="cat_title round_tit">
+							<div>Top Sales</div>
+							<div class="cat_title_pointer"></div>
 						</div>
 						<div id="sel_cat_1">
 							<a href="#">product 1</a>
@@ -205,9 +218,9 @@
 					</div>
 
 					<div class="cat_sel">
-						<div class="cat_title">
-							<h2 onclick="open_sel_cat('sel_cat_2')">Title</h2>
-							<div></div>
+						<div onclick="open_sel_cat('sel_cat_2')" class="cat_title">
+							<div>Brand focus</div>
+							<div class="cat_title_pointer"></div>
 						</div>
 						<div id="sel_cat_2">
 							<a href="#">product 1</a>
@@ -218,9 +231,9 @@
 					</div>
 
 					<div class="cat_sel">
-						<div class="cat_title">
-							<h2 onclick="open_sel_cat('sel_cat_3')">Title</h2>
-							<div></div>
+						<div onclick="open_sel_cat('sel_cat_3')" class="cat_title">
+							<div>HI-Tech</div>
+							<div class="cat_title_pointer"></div>
 						</div>
 						<div id="sel_cat_3">
 							<a href="#">product 1</a>
@@ -231,9 +244,9 @@
 					</div>
 
 					<div class="cat_sel">
-						<div class="cat_title">
-							<h2 onclick="open_sel_cat('sel_cat_4')">Title</h2>
-							<div></div>
+						<div onclick="open_sel_cat('sel_cat_4')" class="cat_title">
+							<div>Home</div>
+							<div class="cat_title_pointer"></div>
 						</div>
 						<div id="sel_cat_4">
 							<a href="#">product 1</a>
@@ -243,10 +256,10 @@
 						</div>
 					</div>
 
-					<div class="cat_sel round_tib">
-						<div class="cat_title">
-							<h2 onclick="open_sel_cat('sel_cat_5')">Title</h2>
-							<div></div>
+					<div class="cat_sel">
+						<div onclick="open_sel_cat('sel_cat_5')" class="cat_title last_cat_title">
+							<div>Sale</div>
+							<div class="cat_title_pointer"></div>
 						</div>
 						<div id="sel_cat_5">
 							<a href="#">product 1</a>
@@ -257,13 +270,34 @@
 					</div>
 				</div> <!-- categories -->	
 
-				<div class="products_available .def_cursor">
+				<div class="products_available">
 					<h3 class="prod_menu_title">Available</h3>
-					<label onchange="select_place()" class="place_sel"><span><input type="radio" name="place" value="In" checked>  In storage</span><p>42</p></label>
-					<label class="place_sel"><span><input type="radio" name="place" value="On">In online-shop</span> <p>12</p></label>
+					
+					<div class="custom_radio_cover">
+						<label class="custom_radio">			
+							<div class="nep_rad">
+								<input type="radio" onclick="select_place()" name="test" checked="checked">
+								<div class="radio_button"></div>
+								<span class="radio_text">In storage</span>
+							</div>
+							<span class="radio_num">42</span>
+						</label>
+					</div>
+
+					<div class="custom_radio_cover">
+						<label class="custom_radio">			
+							<div class="nep_rad">
+								<input type="radio" onclick="select_place()" name="test">
+								<div class="radio_button"></div>
+								<span class="radio_text">In online shop</span>
+							</div>
+							<span class="radio_num">12</span>
+						</label>
+					</div>
 				</div>
+				
 				<div class="brands">
-					<div class="brands_title"><span class="prod_menu_title">brands</span><div onclick="open_sel_cat('brands_sub')">all</div></div>
+					<div class="brands_title"><span class="prod_menu_title brand_title_t">brands</span><div onclick="open_sel_cat('brands_sub')">all</div></div>
 					<form method="post">
 						
 						<div class="pre_container_checkbox">
@@ -292,7 +326,7 @@
 									<span class="brand_name">Bose</span>
 									<span class="brand_count">3</span>
 								</div>
-								<input type="checkbox" checked="checked">	
+								<input type="checkbox" >	
 								<span class="checkmark"></span>
 							</label>
 						</div>
@@ -302,12 +336,12 @@
 									<span class="brand_name">Nest</span>
 									<span class="brand_count">5</span>
 								</div>
-								<input type="checkbox" checked="checked">	
+								<input type="checkbox" >	
 								<span class="checkmark"></span>
 							</label>
 						</div>
 
-
+				
 						<div id="brands_sub">
 							<div class="pre_container_checkbox">
 								<label class="container_checkbox">
@@ -325,7 +359,7 @@
 										<span class="brand_name">Pinus</span>
 										<span class="brand_count">3</span>
 									</div>
-									<input type="checkbox" checked="checked">	
+									<input type="checkbox" >	
 									<span class="checkmark"></span>
 								</label>
 							</div>
@@ -335,14 +369,130 @@
 										<span class="brand_name">Crocodilus</span>
 										<span class="brand_count">50</span>
 									</div>
+									<input type="checkbox" >	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div> <!-- brands_sub -->
+
+					</form>
+				</div> <!-- brands -->
+
+				<div class="brands condition">
+					<div class="brands_title">
+						<span class="prod_menu_title brand_title_t">Condition</span>
+						<div onclick="open_sel_cat('brands_sub2')">See all </div>
+					</div>
+					<form method="post">
+						
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">New</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Manufacturer Refurbished</span>
+								</div>
+								<input type="checkbox" >	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Seller Refurbished</span>
+								</div>
+								<input type="checkbox" >	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">Used</span>
+								</div>
+								<input type="checkbox" checked="checked">	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="pre_container_checkbox">
+							<label class="container_checkbox">
+								<div class="checkmark_text">
+									<span class="brand_name">For Parts or not Working</span>
+								</div>
+								<input type="checkbox" >	
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div id="brands_sub2">
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Nunus</span>
+										<span class="brand_count">2</span>
+									</div>
 									<input type="checkbox" checked="checked">	
 									<span class="checkmark"></span>
 								</label>
 							</div>
-
-						</div>
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Pinus</span>
+										<span class="brand_count">3</span>
+									</div>
+									<input type="checkbox" >	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="pre_container_checkbox">
+								<label class="container_checkbox">
+									<div class="checkmark_text">
+										<span class="brand_name">Crocodilus</span>
+										<span class="brand_count">50</span>
+									</div>
+									<input type="checkbox" >	
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div> <!-- brands_sub -->
 					</form>
-				</div>
+				</div> <!-- brands -->
+				
+				<div class="delivery">
+					<p class="delivery_tit prod_menu_title">Delivery options</p>
+					<div class="delivery_inner">
+						<div class="delivery_item">
+							<div class="custom_radio_cover">
+								<label class="custom_radio">			
+									<div class="nep_rad">
+										<input type="radio" onclick="select_place()" name="stest" checked="checked">
+										<div class="radio_button"></div>
+										<span class="radio_text">Free</span>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="delivery_item">
+							<div class="custom_radio_cover">
+								<label class="custom_radio">			
+									<div class="nep_rad">
+										<input type="radio" onclick="select_place()" name="stest" >
+										<div class="radio_button"></div>
+										<span class="radio_text">$4.99</span>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div> <!-- delivery -->
 			</div> <!-- content_item -->
 			
 			<div class="content_item">
@@ -350,26 +500,26 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/AppleTV.jpg" alt="item">
-							<span>Name</span>
+							<span> Apple TV 32GB</span>
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<h3>Black</h3>
+						<h4>$49.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Pebble Time.png" alt="item">
-							<span>Name</span>
+							<span>Pebble Time</span>
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<h3>Red</h3>
+						<h4>$29.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Zendure 4-Port USB.jpg" alt="item">
-							<span>Name</span>
+							<span>Zendure 4-Port USB</span>
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<h3>White</h3>
+						<h4>$49.99</h4>
 					</div>		
 				</div>
 
@@ -377,18 +527,28 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/withings smart body analyzer ws-50.jpg" alt="item">
-							<span>Name</span>
+							<span>Withings Smart Body<br>Analyzer ws-50</span>	
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+
+						<h3><br></h3>
+						<h4>$39.99</h4>
 					</div>
-					<div class="items_item big_product">
-						<a href="#" class="product_name">
+					<div class="big_product">
+						<a href="#" class="big_product_name">
 							<img src="img/JBL Charge 2+.jpg" alt="item">
-							<span>Name</span>
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<div class="big_product_info">
+							<div class="big_product_info_item">
+								<h5>JBL Charge 2+</h5>
+								<h3>Black</h3>
+							</div>
+							<div class="big_product_info_item big_product_offer">
+								<a href="#" class="big_product_offer_1">16 GB</a>
+								<a href="#" class="big_product_offer_2">Buy now</a>
+							</div>
+						</div>
+
+						<div class="big_product_price">$39.99</div>
 					</div>		
 				</div>
 
@@ -396,26 +556,29 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Ollo Clip New.jpg" alt="item">
-							<span>Name</span>
+							<span>Ollo Clip New</span>
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<h3>Silver</h3>
+						<h4>$19.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Fitbit Charge HR Heart Rate and Activity Tracker.jpg" alt="item">
-							<span>Name</span>
+							
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<span>Fitbit Charge HR Heart Rate <br>and Activity Tracker</span>
+						<h3>black</h3>
+						<h4>$19.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Apple® Watch Sport 38mm Silver Aluminum Case.jpg" alt="item">
-							<span>Name</span>
+							
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<span>Apple Watch Sport 38mm 
+Silver Aluminum Case</span>
+						<h3>White</h3>
+						<h4>$49.99</h4>
 					</div>		
 				</div>
 
@@ -423,26 +586,31 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Bose SoundLink On-Ear Headphones.jpg" alt="item">
-							<span>Name</span>
+							
 						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
+						<span>Bose SoundLink 
+On-Ear Headphones</span>
+						<h3>white</h3>
+						<h4>$119.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/SONOS PLAY-1 Wireless HiFi System.jpg" alt="item">
-							<span>Name</span>
-						</a>
-						<h3>Color</h3>
-						<h4>Price</h4>
-					</div>
-					<div class="items_item">
-						<a href="#" class="product_name full frame">
-							<span>Name</span>
-							<h4>Price</h4>
-							<img src="img/Layer 1.png" alt="item">
 							
 						</a>
+						<span>Sonos Play-1 Wireless  <br>
+HiFi System</span>
+						<h3>black</h3>
+						<h4>$99.99</h4>
+					</div>
+					<div class="full_space_product">
+						<a href="#" class="ull_space_product_name">
+							<img src="img/Layer 11.png" alt="item" class="ull_space_product_img">
+						</a>
+						<div class="full_space_product_info">
+							<span>Nest Learning Thermostat, <br>3rd Generation</span>
+							<h4>$49.99</h4>
+						</div>
 					</div>		
 				</div>
 
@@ -451,7 +619,167 @@
 	</div> <!-- container -->
 </div>
 
+<div class="page_selector">
+	<div class="container">
+		<div class="page_selector_inner">
+			<div class="pre_page_pointer">
+				<div class="nep_page_pointer">
+					<div class="page_pointer prev_page"></div>
+				</div>
+			</div>
+			<div class="pages def_cursor">
+				<div class="page_num">1</div>
+				<div class="page_num">2</div>
+				<div class="page_num">3</div>
+				<div class="page_num active_page">4</div>
+				<div class="page_num">5</div>
+				<div class="page_num">6</div>
+				<div class="page_num">7</div>
+				<div class="page_num">8</div>
+			</div>
+			<div class="pre_page_pointer">
+				<div class="nep_page_pointer">
+					<div class="page_pointer next_page"></div>
+				</div>
+			</div>	
+		</div>
+	</div>	
+</div>
 
+
+<div class="best_sellers">
+	<div class="container">
+		<div class="sellers_inner">
+			<p class="sellers_title">Best Sellers</p>
+		
+			<div class="items_row">	
+				<div class="sellers_item">
+					<a href="#" class="sellers_product">
+						<img src="img/Pphoto.png" alt="item">
+					</a>
+					<h5>Beanie</h5>
+					<h3>Green</h3>
+					<h4><span class="old_price">£39.99</span>£29.99</h4>
+				</div>
+				<div class="sellers_item">
+					<a href="#" class="sellers_product">
+						<img src="img/photo1.png" alt="item">
+					</a>
+					<h5>T-Shirt With a Print</h5>
+					<h3>Dark Blue</h3>
+					<h4><span class="old_price">£29.99</span>£19.99</h4>
+				</div>
+				<div class="sellers_item">
+					<a href="#" class="sellers_product">
+						<img src="img/photo2.png" alt="item">
+						
+					</a>
+					<h5>Pile-Lined Hooded Jacket</h5>
+					<h3>Dark Blue</h3>
+					<h4><span class="old_price">£49.99</span>£39.99</h4>
+				</div>
+
+				<div class="sellers_item">
+					<a href="#" class="sellers_product">
+						<img src="img/photo3.png" alt="item">
+						
+					</a>
+					<h5>Trainers</h5>
+					<h3>Space Grey</h3>
+					<h4><span class="old_price">£39.99</span>£29.99</h4>
+				</div>			
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="team">
+	<div class="container">
+		<div class="team_main_title">What Our Customers Have to Say</div>
+		<div class="team_sub_title">Couple of Words About This Stories Section</div>
+
+		<div class="team_inner">
+			<div class="team_item">
+				<div class="team_title">
+					<div class="team_title_item">
+						<img src="img/customer_1.jpg" alt="">
+					</div>
+					<div class="team_title_item">
+						<h2 class="team_name">Celia Fields</h2>
+						<h3 class="team_prof">UX Expert</h3>
+					</div>
+				</div>
+				<article>
+					This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+
+				</article>
+			</div>
+			<div class="team_item">
+				<div class="team_title">
+					<div class="team_title_item">
+						<img src="img/customer_2.jpg" alt="">
+					</div>
+					<div class="team_title_item">
+						<h2 class="team_name">Alexander Lee</h2>
+						<h3 class="team_prof">Founder</h3>
+					</div>
+				</div>
+				<article>
+					Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+				</article>
+			</div>
+			<div class="team_item">
+				<div class="team_title">
+					<div class="team_title_item">
+						<img src="img/customer_3.jpg" alt="">
+					</div>
+					<div class="team_title_item">
+						<h2 class="team_name">Lenora Sandoval</h2>
+						<h3 class="team_prof">Product Manager</h3>
+					</div>
+				</div>
+				<article>
+					This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="footer_row">
+			<div class="footer_logo def_cursor">
+				<a href="#"><img src="img/anti_logo.png" alt="logo"></a>
+			</div>
+			<nav class="footer_menu def_cursor">
+				<a href="#" class="footer_menu_link">Home</a>
+				<a href="#" class="footer_menu_link">Shop</a>
+				<a href="#" class="footer_menu_link">Team</a>
+				<a href="#" class="footer_menu_link">About Us</a>
+				<a href="#" class="footer_menu_link">Contacts</a>
+			</nav>
+			<div class="soc_links def_cursor">
+				<a href="twitter.com"><img src="img/stwitter.png" alt="twitter"></a>
+				<a href="facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+				<a href="google.com"><img src="img/google.png" alt="google"></a>
+			</div>
+		</div>
+		<div class="footer_row">
+			<div class="footer_line"></div>
+		</div>
+		<div class="footer_row">
+			<div class="footer_quote">
+				She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.
+			</div>
+			<div class="footer_info def_cursor">
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms and Conditions</a>
+			</div>
+		</div>
+	</div>
+</footer>
 <script src="js/main.js"></script>
 </body>
 </html>

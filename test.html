@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<style>
+
+.custom_radio_cover {
+	display: block;
+	width: 100%;
+}
+
+.radio_text {
+	margin-left: 30px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #343e5c;
+}
+
+.radio_num {
+	font-size: 13px;
+	color: #b8bfd3;
+	font-weight: 500;
+}
+
+.custom_radio {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+}
+
+.custom_radio input {
+	display: none;
+}
+
+.radio_button {
+	border-radius: 50px;
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #e5e8f0;
+	content: "";
+}
+
+.radio_button:after {
+	border-radius: 50px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	
+	width: 8px;
+	height: 8px;
+	background-color: #00deea;
+	content: "";
+	display: none;
+}
+
+
+.custom_radio:hover input ~ .radio_button {
+	background-color: #ccc;
+}
+
+.custom_radio:hover input ~ .radio_button:after {
+	display: none;
+}
+
+.custom_radio input:checked ~ .radio_button:after {
+	display: block;
+}
+
+</style>	
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="custom_radio_cover">
+	<label class="custom_radio">			
+		<div class="nep_rad">
+			<input type="radio" onclick="select_place()" name="test">
+			<div class="radio_button"></div>
+			<span class="radio_text">Something</span>
+		</div>
+		<span class="radio_num">42</span>
+	</label>
+</div>
+
+
+
+<script>
+	function check_func(){ 
+		alert("I'm here");
+	}
+</script>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>

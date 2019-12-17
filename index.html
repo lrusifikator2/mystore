@@ -83,7 +83,7 @@
 	</div>	
 </div>
 
-<div class="standboard" style="display: none">
+<div class="standboard">
 	<div class="standboard_content">	
 		<div class="staboard_image  first_image">
 			<div class="staboard_image_cont">
@@ -164,16 +164,17 @@
 			
 			<div class="buymenu_item side">
 				<p>sort by: </p>
-				<div id="buy_men_1" onclick="open_sel_cat('buy_sub_1', this)" >
-					<div class="buymenu_item_select">Best watch</div>
-					<div><div class="buy_point"></div></div>
-				</div>
+				<div class="pre_buy_item">
+					<div id="buy_men_1" onclick="open_buy_cat('buy_sub_1', this, 0, 2, 4, -9)" >
+						<div class="buymenu_item_select">Best watch</div>
+						<div class="buy_sss"><img src="img/down_pointer.png" alt="" class="buy_down_point"></div>
+					</div>
 				
-				<div id="buy_sub_1">
-					<p onclick="select_filter(0)">Date</p>
-					<p onclick="select_filter(1)">Price</p>
+					<div id="buy_sub_1">
+						<p onclick="select_filter(0)">Date</p>
+						<p onclick="select_filter(1)">Price</p>
+					</div>
 				</div>
-
 			</div>
 			<div class="buymenu_item center">
 				<div class="buy_search">
@@ -202,9 +203,9 @@
 			<div class="buymenu_item side">
 				<p>ship to: </p>
 
-				<div id="buy_men_2" onclick="open_sel_cat('buy_sub_2', this)" >
+				<div id="buy_men_2" onclick="open_buy_cat('buy_sub_2', this, -4, 1, 2, 5)" >
 					<div class="buymenu_item_select">USA</div>
-					<div><div class="buy_point"></div></div>
+					<div class="buy_sss"><img src="img/down_pointer.png" alt="" class="buy_down_point buy_down_point_2"></div>
 				</div>
 
 				<div id="buy_sub_2">
@@ -229,7 +230,7 @@
 							<div>Top Sales</div>
 							<div class="cat_title_pointer"></div>
 						</div>
-						<div id="sel_cat_1">
+						<div id="sel_cat_1" class="sel_cat_sub">
 							<a href="#">product 1</a>
 							<a href="#">product 2</a>
 							<a href="#">product 3</a>
@@ -237,12 +238,12 @@
 						</div>
 					</div>
 
-					<div class="cat_sel">
+					<div class="cat_sel" >
 						<div id="cat_sel_2" onclick="open_sel_cat('sel_cat_2', this)" class="cat_title">
 							<div>Brand focus</div>
 							<div class="cat_title_pointer"></div>
 						</div>
-						<div id="sel_cat_2">
+						<div id="sel_cat_2" class="sel_cat_sub">
 							<a href="#">product 1</a>
 							<a href="#">product 2</a>
 							<a href="#">product 3</a>
@@ -255,7 +256,7 @@
 							<div>HI-Tech</div>
 							<div class="cat_title_pointer"></div>
 						</div>
-						<div id="sel_cat_3">
+						<div id="sel_cat_3" class="sel_cat_sub">
 							<a href="#">product 1</a>
 							<a href="#">product 2</a>
 							<a href="#">product 3</a>
@@ -268,7 +269,7 @@
 							<div>Home</div>
 							<div class="cat_title_pointer"></div>
 						</div>
-						<div id="sel_cat_4">
+						<div id="sel_cat_4" class="sel_cat_sub">
 							<a href="#">product 1</a>
 							<a href="#">product 2</a>
 							<a href="#">product 3</a>
@@ -281,7 +282,7 @@
 							<div>Sale</div>
 							<div class="cat_title_pointer"></div>
 						</div>
-						<div id="sel_cat_5">
+						<div id="sel_cat_5" class="sel_cat_sub">
 							<a href="#">product 1</a>
 							<a href="#">product 2</a>
 							<a href="#">product 3</a>

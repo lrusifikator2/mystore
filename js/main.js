@@ -40,13 +40,33 @@ function switch_to(num) {
 function open_sel_cat(id_name, el) {
 	c =  document.getElementById(el.id).childNodes;
     
-  
+  	
 	sm = document.getElementById(id_name);
 	if(sm.style.display == "block"){
 		c[3].style.transform = "rotate(45deg)";
 		sm.style.display = "none";
 	} else {
 		c[3].style.transform = "rotate(135deg)";
+		sm.style.display = "block";
+	}
+}
+
+function open_buy_cat(id_name, el, x1, y1, x2, y2) {
+	c =  document.getElementById(el.id).childNodes;
+      
+	sm = document.getElementById(id_name);
+	if(sm.style.display == "block"){
+		
+		c[3].style.left = x1 + "px";
+		c[3].style.bottom = y1  + "px";
+
+		c[3].style.transform = "rotate(0deg)";
+		sm.style.display = "none";
+	} else {
+		c[3].style.left = x2 + "px";
+		c[3].style.bottom = y2 + "px";
+
+		c[3].style.transform = "rotate(180deg)";		
 		sm.style.display = "block";
 	}
 }

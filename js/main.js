@@ -37,8 +37,18 @@ function switch_to(num) {
 	content[num].style.display = "block";
 }
 
-function open_sel_cat(id_name) {
-	alert(id_name)
+function open_sel_cat(id_name, el) {
+	c =  document.getElementById(el.id).childNodes;
+    
+  
+	sm = document.getElementById(id_name);
+	if(sm.style.display == "block"){
+		c[3].style.transform = "rotate(45deg)";
+		sm.style.display = "none";
+	} else {
+		c[3].style.transform = "rotate(135deg)";
+		sm.style.display = "block";
+	}
 }
 
 function select_place(){

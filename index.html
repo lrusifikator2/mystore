@@ -83,7 +83,7 @@
 	</div>	
 </div>
 
-<div class="standboard">
+<div class="standboard" style="display: none">
 	<div class="standboard_content">	
 		<div class="staboard_image  first_image">
 			<div class="staboard_image_cont">
@@ -164,7 +164,16 @@
 			
 			<div class="buymenu_item side">
 				<p>sort by: </p>
-				<div class="buymenu_item_select">Best watch <div class="poiner"></div></div>
+				<div id="buy_men_1" onclick="open_sel_cat('buy_sub_1', this)" >
+					<div class="buymenu_item_select">Best watch</div>
+					<div><div class="buy_point"></div></div>
+				</div>
+				
+				<div id="buy_sub_1">
+					<p onclick="select_filter(0)">Date</p>
+					<p onclick="select_filter(1)">Price</p>
+				</div>
+
 			</div>
 			<div class="buymenu_item center">
 				<div class="buy_search">
@@ -192,7 +201,18 @@
 			</div>
 			<div class="buymenu_item side">
 				<p>ship to: </p>
-				<div class="buymenu_item_select">USA <div class="poiner"></div></div>
+
+				<div id="buy_men_2" onclick="open_sel_cat('buy_sub_2', this)" >
+					<div class="buymenu_item_select">USA</div>
+					<div><div class="buy_point"></div></div>
+				</div>
+
+				<div id="buy_sub_2">
+					<p onclick="select_country(0)">USA</p>
+					<p onclick="select_country(1)">Russia</p>
+					<p onclick="select_country(2)">Israel</p>
+					<p onclick="select_country(3)">Canada</p>
+				</div>
 			</div>
 
 		</div>
@@ -205,7 +225,7 @@
 			<div class="content_item">
 				<div class="categories">
 					<div class="cat_sel">
-						<div onclick="open_sel_cat('sel_cat_1')" class="cat_title round_tit">
+						<div id="cat_sel_1" onclick="open_sel_cat('sel_cat_1', this)" class="cat_title round_tit">
 							<div>Top Sales</div>
 							<div class="cat_title_pointer"></div>
 						</div>
@@ -218,7 +238,7 @@
 					</div>
 
 					<div class="cat_sel">
-						<div onclick="open_sel_cat('sel_cat_2')" class="cat_title">
+						<div id="cat_sel_2" onclick="open_sel_cat('sel_cat_2', this)" class="cat_title">
 							<div>Brand focus</div>
 							<div class="cat_title_pointer"></div>
 						</div>
@@ -231,7 +251,7 @@
 					</div>
 
 					<div class="cat_sel">
-						<div onclick="open_sel_cat('sel_cat_3')" class="cat_title">
+						<div id="cat_sel_3" onclick="open_sel_cat('sel_cat_3', this)" class="cat_title">
 							<div>HI-Tech</div>
 							<div class="cat_title_pointer"></div>
 						</div>
@@ -244,7 +264,7 @@
 					</div>
 
 					<div class="cat_sel">
-						<div onclick="open_sel_cat('sel_cat_4')" class="cat_title">
+						<div id="cat_sel_4" onclick="open_sel_cat('sel_cat_4', this)" class="cat_title">
 							<div>Home</div>
 							<div class="cat_title_pointer"></div>
 						</div>
@@ -257,7 +277,7 @@
 					</div>
 
 					<div class="cat_sel">
-						<div onclick="open_sel_cat('sel_cat_5')" class="cat_title last_cat_title">
+						<div id="cat_sel_5" onclick="open_sel_cat('sel_cat_5', this)" class="cat_title last_cat_title">
 							<div>Sale</div>
 							<div class="cat_title_pointer"></div>
 						</div>
@@ -500,24 +520,26 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/AppleTV.jpg" alt="item">
-							<span> Apple TV 32GB</span>
 						</a>
+						<span>Apple TV 32GB</span>
 						<h3>Black</h3>
 						<h4>$49.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Pebble Time.png" alt="item">
-							<span>Pebble Time</span>
+							
 						</a>
+						<span>Pebble Time</span>
 						<h3>Red</h3>
 						<h4>$29.99</h4>
 					</div>
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Zendure 4-Port USB.jpg" alt="item">
-							<span>Zendure 4-Port USB</span>
+							
 						</a>
+						<span>Zendure 4-Port USB</span>
 						<h3>White</h3>
 						<h4>$49.99</h4>
 					</div>		
@@ -527,10 +549,10 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/withings smart body analyzer ws-50.jpg" alt="item">
-							<span>Withings Smart Body<br>Analyzer ws-50</span>	
+								
 						</a>
-
-						<h3><br></h3>
+						<span>Withings Smart Body<br>Analyzer ws-50</span>
+						<h3>Blue</h3>
 						<h4>$39.99</h4>
 					</div>
 					<div class="big_product">
@@ -542,9 +564,11 @@
 								<h5>JBL Charge 2+</h5>
 								<h3>Black</h3>
 							</div>
-							<div class="big_product_info_item big_product_offer">
-								<a href="#" class="big_product_offer_1">16 GB</a>
-								<a href="#" class="big_product_offer_2">Buy now</a>
+							<div class="big_product_info_item">
+								<div class="big_product_offer">
+									<a href="#" class="big_product_offer_1">16 GB</a>
+									<a href="#" class="big_product_offer_2">Buy now</a>
+								</div>	
 							</div>
 						</div>
 
@@ -556,8 +580,9 @@
 					<div class="items_item">
 						<a href="#" class="product_name">
 							<img src="img/Ollo Clip New.jpg" alt="item">
-							<span>Ollo Clip New</span>
+							
 						</a>
+						<span>Ollo Clip New</span>
 						<h3>Silver</h3>
 						<h4>$19.99</h4>
 					</div>
@@ -575,7 +600,7 @@
 							<img src="img/Apple® Watch Sport 38mm Silver Aluminum Case.jpg" alt="item">
 							
 						</a>
-						<span>Apple Watch Sport 38mm 
+						<span>Apple Watch Sport 38mm <br>
 Silver Aluminum Case</span>
 						<h3>White</h3>
 						<h4>$49.99</h4>
@@ -588,7 +613,7 @@ Silver Aluminum Case</span>
 							<img src="img/Bose SoundLink On-Ear Headphones.jpg" alt="item">
 							
 						</a>
-						<span>Bose SoundLink 
+						<span>Bose SoundLink <br>
 On-Ear Headphones</span>
 						<h3>white</h3>
 						<h4>$119.99</h4>
@@ -671,7 +696,7 @@ HiFi System</span>
 				</div>
 				<div class="sellers_item">
 					<a href="#" class="sellers_product">
-						<img src="img/photo2.png" alt="item">
+						<img src="img/Photo2.png" alt="item">
 						
 					</a>
 					<h5>Pile-Lined Hooded Jacket</h5>
@@ -681,8 +706,7 @@ HiFi System</span>
 
 				<div class="sellers_item">
 					<a href="#" class="sellers_product">
-						<img src="img/photo3.png" alt="item">
-						
+						<img src="img/Photo3.png" alt="item">
 					</a>
 					<h5>Trainers</h5>
 					<h3>Space Grey</h3>

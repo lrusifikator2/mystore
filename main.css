@@ -101,16 +101,15 @@ header {
 }
 
 .header_right_item.cart {
-	padding-top: 25px;
+	
 }
 
 .header_right_item.cart span {
-	padding-right: 10px;
-	padding-left: 10px;
 }
 
 .header_right_item span {
-	padding-top: 6px;
+	padding-top: 5px;
+	padding-left: 7px;
 	font-size: 15px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -132,14 +131,18 @@ header {
 }	
 
 .item_counter {
+	margin-left: 5px;
 	background-color: #e3e8f0;
 	border-radius: 50px;
-	padding: 6px 9px;
+	padding: 4px 8px;
+	cursor: pointer;
+	margin-top: 2px;	
 }
 
 .header_right_item.cart {
-	margin-top: 0;
+	margin-top: 25px;
 	margin-right: 25px;	
+	cursor: pointer;
 }
 
 .pre_sing a {
@@ -405,17 +408,20 @@ header {
 .buy_search {
 	display: flex;
 }
+
 .buymenu_item.center {
 	display: flex;
 	justify-content: space-between;
 	border-right: 1px solid #e4e5e7;
 	border-left: 1px solid #e4e5e7;
 	padding: 10px 20px;
+	
 }
 
 .buymenu_item {
 	display: flex;
 	padding: 10px 0;
+	position: relative;
 }
 
 .buymenu_item_select {
@@ -491,6 +497,65 @@ header {
 	box-shadow: 0 0 0 2px #9ec1fa;
 }
 
+#buy_sub_1 {
+	display: none;
+}
+
+.buy_point {
+	display: block;
+	content: "";
+	max-width: 5px;
+	max-height: 5px;
+	width: 100%;
+	height: 100%;
+	border-top: 2px solid #c4cada;
+	border-right: 2px solid #c4cada;
+	border-bottom: 2px solid blue;
+	border-left: 2px solid blue;
+	transform: rotate(45deg);
+}
+
+
+.buymenu_item_select {
+	margin-right: 10px;
+}
+
+#buy_men_1 {
+	margin-top: -7px;
+	display: flex;
+}
+
+#buy_sub_1 {
+	position: absolute;
+	display: none;
+	background-color: white;
+	right: 0;
+	top: 40px;
+	padding: 0 20px;
+}
+
+#buy_sub_1 p {
+	cursor: pointer;
+}
+
+#buy_men_2 {
+	margin-top: -7px;
+	display: flex;
+}
+
+#buy_sub_2 {
+	position: absolute;
+	display: none;
+	background-color: white;
+	right: 0;
+	top: 40px;
+	padding: 0 20px;
+}
+
+#buy_sub_2 p {
+	cursor: pointer;
+}
+
 #search {
 	width: 149px;
 	display: block;
@@ -552,6 +617,7 @@ header {
 }
 
 .product_name {
+	display: block;
 	max-width: 220px;
 	max-height: 220px;
 	width: 100%;
@@ -568,9 +634,9 @@ header {
 	height: 100%;
 }
 
-.product_name span {
+.items_item span {
+	height: 40px;
 	display: block; 
-
 
 	font-size: 16px;
 	color: black;
@@ -587,7 +653,6 @@ header {
 .items_item h4 {
 	font-size: 15px;
 	color: #404966;
-
 }
 
 /* big_product */
@@ -595,6 +660,7 @@ header {
 	width: 570px;
 	background-color: white;
 	margin-left: 30px;
+	padding-bottom: 40px;
 	margin-bottom: 30px;
 	position: relative;
 	border-radius: 5px;
@@ -622,6 +688,7 @@ header {
 .big_product_info {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 
 .big_product_offer {
@@ -630,11 +697,9 @@ header {
 	margin-right: 20px;
 	border: 2px solid #f0f2f7;
 	border-radius: 50px;
-	margin-bottom: 10px;
 }
 
 .big_product_offer a {
-	display: block;
 	width: 120px;
 	margin: 0;
 	padding: 0;
@@ -642,7 +707,8 @@ header {
 	color: #4d5168;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
-	padding-top: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .big_product_offer a:first-child {
@@ -695,7 +761,7 @@ header {
 
 .full_space_product_info {
 	position: absolute;
-	left: 60px;
+	left: 55px;
 	top: 40px;
 	text-align: center;
 }
@@ -703,6 +769,7 @@ header {
 .full_space_product_info span {
 	font-size: 16px;
 	font-weight: 500;
+
 }
 
 .full_space_product_info h4 {
@@ -781,13 +848,11 @@ header {
 
 
 /* products_available */
-
-
-
 .prod_menu_title {
 	font-size: 11;
+	font-weight: 600;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
+
 	text-transform: uppercase;
 	color: #343e5c;
 }
@@ -795,7 +860,8 @@ header {
 .products_available {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
-	padding-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-top: 28px;
 	font-size: 11px;
 	font-family: 'Montserrat', sans-serif;	
@@ -861,10 +927,10 @@ header {
 	border-radius: 50px;
 	position: absolute;
 	left: 4px;
-	top: 3px;
+	top: 4px;
 	
-	width: 8px;
-	height: 8px;
+	width: 7px;
+	height: 7px;
 	background-color: #00deea;
 	content: "";
 	display: none;
@@ -893,13 +959,13 @@ header {
 }
 
 .products_available label {
-	padding: 15px 20px;
+	padding: 10px 20px;
 	display: flex;
 	justify-content: space-between;	
 }
 
 .products_available label:last-child {
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 }
 
 /* brands */
@@ -923,8 +989,10 @@ header {
 }
 
 .brands_title {
-	padding: 10px 20px 15px 20px;	
+	padding: 5px 20px 11px 20px;	
 	display: flex;
+	font-size: 11px;
+	font-weight: 500;
 	justify-content: space-between;
 	border-bottom: 1px solid #f0f2f7;
 	text-transform: uppercase;
@@ -1066,7 +1134,7 @@ header {
 
 .delivery_tit {
 	font-weight: 600;
-	padding: 20px;
+	padding: 15px 20px;
 	border-bottom: 1px solid #f0f2f7;
 }
 
@@ -1343,7 +1411,6 @@ footer {
 	background-color: #2d2e33;
 }
 
-
 .footer_quote {
 	width: 522px;	
 	color: #7a7a7c;
@@ -1358,20 +1425,10 @@ footer {
 }
 
 /*
-	
 
-проставить везде навзания продуктов, категории и цены
-
-сделать нормальную точку в центре радио
-подровнять меню (лучше вообще переделай его)
-решить проблему с больным на голову размером продуктов. 
-	Нужно сделать так, что бы размер компонентов (называние, цвет, цена ) не влиял друг на друга. 
-	То есть поиесить все в блоки, сделать размер фиксированным для кажддого типа блока и положить их друг на друга. Усе 
-
-Курсор на корзину
-В боковом меню нужно добиться идеальных размеров полей, а то все как то скачет. 
 сделать выборку в меню
-сделать выборку в категории
 анимация
+
+сделать меню у субменю на ховер
 
 */	

@@ -256,6 +256,7 @@ header {
 	padding-bottom: 60px;
 	height: 64px;
 	letter-spacing: 0.7px;
+	cursor: pointer;
 }
 
 .standboard_article a {
@@ -267,6 +268,7 @@ header {
 	text-transform: uppercase;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
+	cursor: pointer;
 }
 
 .standboard_prev {
@@ -1478,9 +1480,4 @@ footer {
 	text-transform: uppercase;
 	font-weight: 600;
 }
-
-/*
-
-анимация
-
-*/	
+	

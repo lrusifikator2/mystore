@@ -234,18 +234,15 @@ header {
 }
 
 .standboard_article {	
-	padding-left: 215px;
-	max-width: 470px;
-	width: 100%;
-	
-	
+	width: 50%;
+		
 	display: block;
 	line-height: 1.5;
 	
 	color: white;
 	position: absolute;
-	top: 46%;
-	left: 0;
+	top: 50%;
+	left: 215px;
 	z-index: 1;
 	transform: translateY(-50%);
 }
@@ -254,9 +251,12 @@ header {
 	font-size: 16px;
 	padding-top: 15px;
 	padding-bottom: 60px;
-	height: 64px;
 	letter-spacing: 0.7px;
 	cursor: pointer;
+	width: 70%;
+	word-break: break-word;
+	white-space: normal;
+	text-align: left;
 }
 
 .standboard_article a {
@@ -311,7 +311,13 @@ header {
 	position: absolute;	
 	display: flex;
 	bottom: 30px;
-	left: 47.7%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
 }
 
 .dot {
@@ -326,21 +332,17 @@ header {
 	border: 2px solid #898a8c;
 }
 
-.active_dot {
+.dot_active {
 	border: 2px solid white;
 	background-color: white;
 }
 
-.staboard_image.second_image {
+.staboard_image {
 	display: none;
 }
 
-.staboard_image.third_image {
-	display: none;
-}
-
-.staboard_image.fourth_image {
-	display: none;
+.staboard_image:first-child {
+	display: block;
 }
 
 .standboard_article h2 {
@@ -1480,4 +1482,3 @@ footer {
 	text-transform: uppercase;
 	font-weight: 600;
 }
-	
